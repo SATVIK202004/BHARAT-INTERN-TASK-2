@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('satvik.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    background: linear-gradient(to right, #ffeb3b, #22ffcb);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#weather input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#weather button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+#weather button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+    color: #ffeb3b; 
+}
+
+#weatherData,
+#forecastData {
+    margin-top: 20px;
+}
+
+.forecast-item {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #e0f7fa;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.forecast-item:hover {
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+}
+
+.forecast-item i {
+    font-size: 48px;
+    color: #ff4500; 
+}
+
+.forecast-item img {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0 0 5px rgba(0, 123, 255, 0.5));
+}
+
+
+.glowing-text {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #007BFF, 0 0 30px #0056b3;
+    }
+
+    to {
+        text-shadow: 0 0 20px #ff5722, 0 0 30px #ffeb3b, 0 0 40px #ffeb3b;
+    }
+}
+
+#realTimeAccess {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3822ff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#realTimeAccess p {
+    margin: 5px 0;
+}
+
+#accessStatus {
+    font-weight: bold;
+}
+
+#currentTimeContainer {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #ff229f;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#currentTime {
+    margin: 0;
+}
+
+
+#copyright {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+}

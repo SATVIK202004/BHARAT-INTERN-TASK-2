@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAT Weather Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1> SAT Weather App</h1>
+        <div id="weather">
+            <input type="text" id="city" placeholder="Enter city">
+            <button onclick="getWeather()">Get Weather</button>
+            <div id="weatherData"></div>
+            <div id="forecastData"></div>
+        </div>
+    </div>
+    <div id="realTimeAccess">
+        <p>Real-Time Access</p>
+        <p>Status: <span id="accessStatus">Online</span></p>
+    </div>
+    <div id="currentTimeContainer">
+        <p id="currentTime"></p>
+    </div>
+    <div id="copyright">
+        <p>&copy; Peddisetty Venkat Satvik All Rights Reserved 2024</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
